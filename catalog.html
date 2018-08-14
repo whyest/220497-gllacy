@@ -25,17 +25,16 @@
     </nav> 
    </header> 
    <main class="container">
-    <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
-    
+
     <!-- breadcrumbs -->
     <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
-    <h2 class="ice-cream">Сливочное мороженное</h2>
+    <h1 class="ice-cream">Сливочное мороженное</h1>
     
-    <section class="option">
+    <form class="option">
       <p class="option-list">Сортировка:</p>
       <select name="option">
          <option value="popular" selected>по популярности</option >
@@ -43,12 +42,12 @@
          <option value="popular">сначала дорогие</option>
          <option value="popular">по жирности</option>
       </select>
-    </section>
-    <section class="price">
+   
+    <div class="price">
         <p class="price-item">Цена: 100 руб. - 500 руб.</p>
         <input type="range" min="100" max="500" step="10">
-    </section>
-    <form class="fat">
+    </div>
+    <div class="fat">
       <p>Жирность:</p>
         <input type="radio" name="0%" id="0-fat" value="0%">
         <label for="0-fat">0%</label>
@@ -58,8 +57,8 @@
         <label for="30-fat">до 30%</label>
         <input type="radio" name="more-30%" id="more-30-fat" value="more-30%">
         <label for="more-30-fat">выше 30%</label><br>
-    </form>
-    <form class="fat">
+    </div>
+    <div class="fat">
       <p>Наполнители:</p>
         <input type="checkbox" name="chocolate" id="chocolate" value="chocolate" checked>
         <label for="chocolate">шоколадные</label>
@@ -72,8 +71,8 @@
         <input type="checkbox" name="jam" id="jam" value="jam">
         <label for="jam">джемы</label>
         <input type="submit" value="Применить">
-    </form>
-    
+    </div>
+    </form> 
     <section class="catalog">
       <ul class="catalog-list">
        <li class="catalog-item">
@@ -240,7 +239,7 @@
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a>2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li><br>
+          <li class="pagination-item"><a href="#">4</a></li>
           <li class="pagination-item"><a href="#">5</a></li>
         </ul>
     
