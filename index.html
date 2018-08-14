@@ -172,15 +172,24 @@
     </footer>
     
     <section class="modal modal-login">
-      <form>
+      <form class="login-link">
           <input type="email" name="email" placeholder="Электронная почта"><br>
           <input type="password" name="password" placeholder="Пароль" hidden><br>
           <input type="button" name="button" value="Войти">
           <p><a href="#">Забыли пароль?</a></p><br>
           <p><a href="#">Новая регистрация</a></p><br>
       </form>
+      <form class="search">
+          <input type="search" name="search" placeholder="Что ищем?">
+      </form>
     </section>
-    -->
+    <section class="feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <input type="text" name="name" placeholder="Как вас зовут?" required><br>
+        <input type="email" name="email" placeholder="Ваша почта для ответа" required><br>
+        <textarea type="text" rows="10" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
+        <input type="submit" name="send" value="Отправить">
+    </section>
     
    </main>
   </body>
