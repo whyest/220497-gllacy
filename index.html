@@ -9,13 +9,21 @@
     <nav class="main-navigation">
     <a class="main-header-logo"><img src="img/index-logo.svg" width="" height="" alt="Логотип магазина мороженного Глейси"></a>
      <ul class="site-navigation">
-      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="catalog.html">Каталог</a>
+      <ul class="sub-menu">
+          <li><a href="#1">Новинки</a></li>
+          <li><a href="#2">Сливочное</a></li>
+          <li><a href="#3">Щербеты</a></li>
+          <li><a href="#">Фруктовый лед</a></li>
+          <li><a href="#">Мелорин</a></li>
+        </ul>
+      </li>
       <li><a href="delivery.html">Доставка и оплата</a></li>
       <li><a href="about-us.html">О Компании</a></li>
      </ul>
      <ul class="user-navigation">
       <li class="visually-hidden"><a href="search.html">Поиск</a></li>
-      <li><a href="login-link.html">Вход</a></li>
+      <li><a href="#">Вход</a></li>
       <li><a href="basket.html">Пусто</a></li>  
       <section class="work-hours">
           <p class="work-hours-time">С 10 до 20, ежедневно</p><br>
@@ -162,6 +170,18 @@
       </p>
       <p>&copy; 2017</p>
     </footer>
+    
+    <section class="modal modal-login">
+      <form>
+          <input type="email" name="email" placeholder="Электронная почта"><br>
+          <input type="password" name="password" placeholder="Пароль" hidden><br>
+          <input type="button" name="button" value="Войти">
+          <p><a href="#">Забыли пароль?</a></p><br>
+          <p><a href="#">Новая регистрация</a></p><br>
+      </form>
+    </section>
+    -->
+    
    </main>
   </body>
 </html>
