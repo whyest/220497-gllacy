@@ -24,13 +24,13 @@
         <li class="visually-hidden"><a href="search.html">Поиск</a>
         </li>
         <li><a href="login-link.html">Вход</a>
-        <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <label for="email" class="visually-hidden">
-              <input type="email" id="email" name="email" placeholder="Электронная почта">
+                <input type="email" id="email" name="email" placeholder="Электронная почта">
               </label>
               <label for="password" class="visually-hidden">
-              <input type="text" id="password" name="password" placeholder="Пароль">
+                <input type="text" id="password" name="password" placeholder="Пароль">
               </label>
               <button type="button">Войти</button>
               <p><a href="#">Забыли пароль?</a>
@@ -41,7 +41,7 @@
           </form>
         </li>
         <li><a href="basket.html">2 товара</a>
-
+        <fieldset class="basket-order">
           <form class="modal orders">
             <ul class="orders-list">
               <li>
@@ -66,9 +66,9 @@
               </li>
             </ul>
             <output name="final-price">Итого:750 руб.</output>
-            <input class="item-order" type="submit" value="Оформить заказ">
+            <button type="submit" class="item-order button">Оформить заказ</button>
           </form>
-
+        </fieldset>
         </li>
         <section class="work-hours">
           <p class="work-hours-time">С 10 до 20, ежедневно</p>
@@ -109,23 +109,20 @@
         <ul>
           <li class="fat-option">
             <label for="0-fat">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="0-fat" value="0%">
-            0%</label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="0-fat" value="0%">0%
+            </label>
           </li>
           <li class="fat-option">
-           <label for="10-fat">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="10-fat" value="10%" checked>
-            до 10%</label>
+            <label for="10-fat">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="10-fat" value="10%" checked>до 10%</label>
           </li>
           <li class="fat-option">
-           <label for="30-fat">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="30-fat" value="30%">
-            до 30%</label>
+            <label for="30-fat">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="30-fat" value="30%">до 30%</label>
           </li>
           <li class="fat-option">
-           <label for="more-30-fat">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="more-30-fat" value="more-30%">
-            выше 30%</label>
+            <label for="more-30-fat">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="more-30-fat" value="more-30%">выше 30%</label>
           </li>
         </ul>
       </fieldset>
@@ -233,15 +230,15 @@
           </a>
         </li>
         <li class="catalog-item">
+          <a href="#">
           <figure class="catalog-iceCream">
             <img class="catalog-item-img" src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <figcaption class="catalog-item-info">
-              <a href="#">
                 <span class="catalog-category">375 &#8381/кг</span>
-                <span class="catalog-item-title">Сливочно-лимонное с карамельной присыпкой</span>
-              </a>
+                <span class="catalog-item-title">Сливочно-лимонное с карамельной присыпкой</span>           
             </figcaption>
           </figure>
+          </a>
         </li>
         <li class="catalog-item">
           <a href="#">
@@ -305,7 +302,7 @@
     </section>
 
     <ul class="pagination-list">
-     <button class="button page-button page-button-back" type="button">Назад</button>
+      <button class="button page-button page-button-back" type="button">Назад</button>
       <li class="pagination-item pagination-item-current"><a href="#">1</a>
       </li>
       <li class="pagination-item"><a>2</a>
@@ -316,7 +313,7 @@
       </li>
       <li class="pagination-item"><a href="#">5</a>
       </li>
-        <button class="button page-button page-button-next" type="button">Вперед</button>
+      <button class="button page-button page-button-next" type="button">Вперед</button>
     </ul>
 
     <footer class="main-footer">
