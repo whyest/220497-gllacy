@@ -26,11 +26,12 @@
         <li><a href="login-link.html">Вход</a>
         <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <label for="email" class="visually-hidden"></label>
+              <label for="email" class="visually-hidden">
               <input type="email" id="email" name="email" placeholder="Электронная почта">
-
-              <label for="password" class="visually-hidden"></label>
+              </label>
+              <label for="password" class="visually-hidden">
               <input type="text" id="password" name="password" placeholder="Пароль">
+              </label>
               <button type="button">Войти</button>
               <p><a href="#">Забыли пароль?</a>
               </p>
@@ -107,20 +108,24 @@
         <legend class="fat-title">Жирность:</legend>
         <ul>
           <li class="fat-option">
+            <label for="0-fat">
             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="0-fat" value="0%">
-            <label for="0-fat">0%</label>
+            0%</label>
           </li>
           <li class="fat-option">
+           <label for="10-fat">
             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="10-fat" value="10%" checked>
-            <label for="10-fat">до 10%</label>
+            до 10%</label>
           </li>
           <li class="fat-option">
+           <label for="30-fat">
             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="30-fat" value="30%">
-            <label for="30-fat">до 30%</label>
+            до 30%</label>
           </li>
           <li class="fat-option">
+           <label for="more-30-fat">
             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="more-30-fat" value="more-30%">
-            <label for="more-30-fat">выше 30%</label>
+            выше 30%</label>
           </li>
         </ul>
       </fieldset>
