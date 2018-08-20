@@ -24,6 +24,20 @@
         <li class="visually-hidden"><a href="search.html">Поиск</a>
         </li>
         <li><a href="login-link.html">Вход</a>
+        <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <label for="email" class="visually-hidden"></label>
+              <input type="email" id="email" name="email" placeholder="Электронная почта">
+
+              <label for="password" class="visually-hidden"></label>
+              <input type="text" id="password" name="password" placeholder="Пароль">
+              <button type="button">Войти</button>
+              <p><a href="#">Забыли пароль?</a>
+              </p>
+              <p><a href="#">Новая регистрация</a>
+              </p>
+            </fieldset>
+          </form>
         </li>
         <li><a href="basket.html">2 товара</a>
 
@@ -286,7 +300,7 @@
     </section>
 
     <ul class="pagination-list">
-     <span class="button page-button page-button-back">Назад</span>
+     <button class="button page-button page-button-back" type="button">Назад</button>
       <li class="pagination-item pagination-item-current"><a href="#">1</a>
       </li>
       <li class="pagination-item"><a>2</a>
@@ -297,7 +311,7 @@
       </li>
       <li class="pagination-item"><a href="#">5</a>
       </li>
-        <span class="button page-button page-button-next">Вперед</span>
+        <button class="button page-button page-button-next" type="button">Вперед</button>
     </ul>
 
     <footer class="main-footer">
