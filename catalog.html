@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Glacy Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -42,46 +45,46 @@
 
         <li class="login-link"><a href="login.html">Вход</a>
           <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email" class="visually-hidden">
-                <input type="email" id="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label for="password" class="visually-hidden">
-                <input type="text" id="password" name="password" placeholder="Пароль">
-              </label>
-              <button type="button" class="enter-btn">Войти</button>
-              <p><a href="#">Забыли пароль?</a>
-              </p>
-              <p><a href="#">Новая регистрация</a>
-              </p>
+            <label for="email" class="visually-hidden">
+              <input type="email" id="email" name="email" placeholder="Электронная почта">
+            </label>
+            <label for="password" class="visually-hidden">
+              <input type="text" id="password" name="password" placeholder="Пароль">
+            </label>
+            <button type="button" class="enter-btn">Войти</button>
+            <p><a href="#">Забыли пароль?</a>
+            </p>
+            <p><a href="#">Новая регистрация</a>
+            </p>
           </form>
         </li>
         <li><a href="basket.html">2 товара</a>
-            <form class="modal orders">
-              <ul class="orders-list">
-                <li>
-                  <figure class="catalog-iceCream">
-                    <img class="catalog-item-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                    <figcaption class="catalog-item-info">
-                      <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
-                      <span class="catalog-item-kilo">1,5 кг х <div class="rouble">200 руб.</div></span>
-                      <span class="catalog-price">300 руб.</span>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li>
-                  <figure class="catalog-iceCream">
-                    <img class="catalog-item-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                    <figcaption class="catalog-item-info">
-                      <span class="catalog-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                      <span class="catalog-item-kilo">1,5 кг х <div class="rouble">300 руб.</div></span>
-                      <span class="catalog-price">450 руб.</span>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-              <output name="final-price">Итого:750 руб.</output>
-              <button type="submit" class="item-order button">Оформить заказ</button>
-            </form>
+          <form class="modal orders">
+            <ul class="orders-list">
+              <li>
+                <figure class="catalog-iceCream">
+                  <img class="catalog-item-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  <figcaption class="catalog-item-info">
+                    <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
+                    <span class="catalog-item-kilo">1,5 кг х <div class="rouble">200 руб.</div></span>
+                    <span class="catalog-price">300 руб.</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="catalog-iceCream">
+                  <img class="catalog-item-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <figcaption class="catalog-item-info">
+                    <span class="catalog-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="catalog-item-kilo">1,5 кг х <div class="rouble">300 руб.</div></span>
+                    <span class="catalog-price">450 руб.</span>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <output name="final-price">Итого:750 руб.</output>
+            <button type="submit" class="item-order button">Оформить заказ</button>
+          </form>
         </li>
         <section class="work-hours">
           <p class="work-hours-time">С 10 до 20, ежедневно</p>
