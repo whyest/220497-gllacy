@@ -29,13 +29,12 @@ overflow: hidden;
 }
 
 .page {
-  font-family: "Roboto", "Open Sans", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
   text-transform: none;
-  text-decoration: underline;
   background-color: #849D8F;
   /*
     Дополнительные цвета фона при переключении слайдера
@@ -44,6 +43,7 @@ overflow: hidden;
     background-color: #9D8B84;
     */
 }
+
 a {
   text-decoration: none;
 }
@@ -66,4 +66,100 @@ a {
   background-color: #9FB3A8;
   color: #323232;
   text-decoration: none;
+}
+
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.sub-menu {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #323232;
+  background-color: #F8F7F4;
+  list-style: none;
+  display: none;
+  text-decoration: none;
+}
+
+.new-sub {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.login-link,
+.your-order {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.work-hours-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.work-hours-phone {
+  font-size: 22;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.slide-text {
+  font-size: 60px;
+  line-height: 60,35px;
+  font-weight: bold;
+}
+
+.order-btn {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+  text-decoration: none;
+}
+
+
+
+<!-- Stopped here +++++++++++++===================+++++++++++-->
+
+
+
+
+.catalog-navigation:hover .sub-menu {
+  display: block;
+}
+
+.modal-search {
+  display: none;
+}
+
+.search:hover .search-svg path {
+  fill: #000000;
+}
+
+.search:hover .modal-search {
+  display: block;
+}
+
+.feature-item-raspberry {
+  background-color: orange;
+  background-image:;
+  background: orange url("");
 }
