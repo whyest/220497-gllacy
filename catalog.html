@@ -58,7 +58,7 @@
             </p>
           </form>
         </li>
-        <li><a href="basket.html">2 товара</a>
+        <li class="orders"><a href="basket.html">2 товара</a>
           <form class="modal orders">
             <ul class="orders-list">
               <li>
@@ -109,10 +109,10 @@
       <fieldset class="option-box">
         <legend class="option-list">Сортировка:</legend>
         <select name="option">
-          <option value="popular" selected>по популярности</option>
-          <option value="popular">сначала недороги</option>
-          <option value="popular">сначала дорогие</option>
-          <option value="popular">по жирности</option>
+          <option class="option-item" value="popular" selected>по популярности</option>
+          <option class="option-item" value="popular">сначала недороги</option>
+          <option class="option-item" value="popular">сначала дорогие</option>
+          <option class="option-item" value="popular">по жирности</option>
         </select>
       </fieldset>
 
@@ -122,7 +122,7 @@
       </fieldset>
       <fieldset class="fat">
         <legend class="fat-title">Жирность:</legend>
-        <ul>
+        <ul class="fat-list">
           <li class="fat-option">
             <label for="0-fat">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="0-fat" value="0%">0%
@@ -144,7 +144,7 @@
       </fieldset>
       <fieldset class="flavors">
         <legend class="flavors-title">Наполнители:</legend>
-        <ul>
+        <ul class="flavor-list">
           <li class="flavor-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" value="chocolate" checked>
             <label for="chocolate">шоколадные</label>
@@ -347,6 +347,14 @@
           <a class="social-button vkontakte visually-hidden" href="#">Вконтакте</a>
         </li>
       </ul>
+      
+      <ul class="nav-contacts">
+        <li class="nav-contacts-item nav-for-supplier"><a href="#">Для поставщиков</a></li>
+        <li class="nav-contacts-item"><a href="#">О производстве</a></li>
+        <li class="nav-contacts-item"><a href="#">Наши документы</a></li>
+        <li class="nav-contacts-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+      
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="copyright-img" src="#" width="109" height="38" alt="">
         <p class="made-in-html">Сделано в HTML Academy &copy; 2017</p>

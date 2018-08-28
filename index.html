@@ -55,9 +55,9 @@
               <input type="text" id="password" name="password" placeholder="Пароль">
             </label>
             <button type="button" class="enter-btn">Войти</button>
-            <p><a href="#">Забыли пароль?</a>
+            <p><a class="forget-pass" href="#">Забыли пароль?</a>
             </p>
-            <p><a href="#">Новая регистрация</a>
+            <p><a class="new-registration" href="#">Новая регистрация</a>
             </p>
           </form>
         </li>
@@ -78,17 +78,17 @@
       <ul class="slides-switch">
         <li class="slide-radio">
           <button type="button" class="slide-btn visually-hidden">Первый слайд</button>
-          <h3 class="ice-cream-1">Крем-брюле и пломбир с малиновым джемом</h3>
+          <h3 class="slide-text ice-cream-1">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="order-btn ice-cream-btn-1" href="#">Давайте оба!</a>
         </li>
         <li class="slide-radio">
           <button type="button" class="slide-btn visually-hidden">Второй слайд</button>
-          <h3 class="ice-cream-2">Шоколадный пломбир и лимоный сорбет</h3>
+          <h3 class="slide-text ice-cream-2">Шоколадный пломбир и лимоный сорбет</h3>
           <a class="order-btn ice-cream-btn-2" href="#">Давайте оба!</a>
         </li>
         <li class="slide-radio">
           <button type="button" class="slide-btn visually-hidden">Третий слайд</button>
-          <h3 class="ice-cream-3">Пломбир с помадкой и клубничный щербет</h3>
+          <h3 class="slide-text ice-cream-3">Пломбир с помадкой и клубничный щербет</h3>
           <a class="order-btn ice-cream-btn-1" href="#">Давайте оба!</a>
         </li>
       </ul>
@@ -97,15 +97,15 @@
     <section class="feature">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="feature-list">
-        <li class="feature-item">
+        <li class="feature-item feature-item-raspberry">
           <h3 class="feature-title">Малинка даром!</h3>
-          <p class="feature-desс">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="feature-btn" href="#">Хочу шоколадки!</a>
-        </li>
-        <li class="feature-item">
-          <h3 class="feature-title">Шоколадки даром!</h3>
-          <p class="feature-desс">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <p class="feature-desc">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="feature-btn" href="#">Хочу варенье!</a>
+        </li>
+        <li class="feature-item feature-item-chocolate">
+          <h3 class="feature-title">Шоколадки даром!</h3>
+          <p class="feature-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="feature-btn" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
     </section>
@@ -205,10 +205,10 @@
       <img src="img/map-pin.jpg" width="1200" height="640" alt="Наш адрес на карте">
       <address class="contacts-address">
             <h3 class="contacts-title">Адрес главного офиса и офлайн-магазина:</h3>
-            <p class="where-to">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <p class="order-by-phone">Для заказов по телефону:</p>
-            <p class="telephone">8 812 450-25-25</p>
-            <p class="from-to">(с 10 до 20 ежедневно)</p>
+            <p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+            <p class="contacts-order">Для заказов по телефону:</p>
+            <p class="contacts-tel">8 812 450-25-25</p>
+            <p class="contacts-open">(с 10 до 20 ежедневно)</p>
         </address>
         
     </section>
@@ -227,6 +227,14 @@
           <a class="social-button vkontakte visually-hidden" href="#">Вконтакте</a>
         </li>
       </ul>
+      
+      <ul class="nav-contacts">
+        <li class="nav-contacts-item nav-for-supplier"><a href="#">Для поставщиков</a></li>
+        <li class="nav-contacts-item"><a href="#">О производстве</a></li>
+        <li class="nav-contacts-item"><a href="#">Наши документы</a></li>
+        <li class="nav-contacts-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+      
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="copyright-img" src="#" width="109" height="38" alt="">
         <p class="made-in-html">Сделано в HTML Academy &copy; 2017</p>
@@ -235,7 +243,7 @@
 
     <form class="modal modal-feedback">
       <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close visually-hidden" type="button">Закрыть</button>
       <p>
         <label for="username" class="visually-hidden">
           <input type="text" id="username" name="name" placeholder="Как вас зовут?" required>
