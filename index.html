@@ -10,6 +10,11 @@
 </head>
 
 <body class="page">
+<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+ <div class="site-wrapper">
+ <div class="container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -70,27 +75,35 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-container">
     <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
 
     <section class="slider">
+     <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
       <h2 class="visually-hidden">Слайдер</h2>
-      <ul class="slides-switch">
-        <li class="slide-radio">
-          <button type="button" class="slide-btn visually-hidden">Первый слайд</button>
-          <h3 class="slide-text ice-cream-1">Крем-брюле и пломбир с малиновым джемом</h3>
-          <a class="order-btn ice-cream-btn-1" href="#">Давайте оба!</a>
-        </li>
-        <li class="slide-radio">
-          <button type="button" class="slide-btn visually-hidden">Второй слайд</button>
-          <h3 class="slide-text ice-cream-2">Шоколадный пломбир и лимоный сорбет</h3>
-          <a class="order-btn ice-cream-btn-2" href="#">Давайте оба!</a>
-        </li>
-        <li class="slide-radio">
-          <button type="button" class="slide-btn visually-hidden">Третий слайд</button>
-          <h3 class="slide-text ice-cream-3">Пломбир с помадкой и клубничный щербет</h3>
-          <a class="order-btn ice-cream-btn-1" href="#">Давайте оба!</a>
-        </li>
+      <ul class="slider-list">
+       <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
       </ul>
     </section>
 
@@ -260,7 +273,8 @@
       <button class="button" type="submit">Отправить</button>
     </form>
   </main>
+  </div>
+  </div>
 </body>
-
 </html>
 
