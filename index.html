@@ -20,6 +20,8 @@
       <a class="main-header-logo">
         <img class="logo-img" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного Глейси">
       </a>
+      <div class="main-navigation-wrapper">
+      <div class="nav-container">
       <ul class="site-navigation">
         <li class="catalog-navigation"><a class="catalog-link" href="catalog.html">Каталог</a>
           <ul class="sub-menu">
@@ -52,7 +54,7 @@
         </li>
 
         <li class="login-link"><a href="login.html">Вход</a>
-          <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+          <form class="modal modal-login visually-hidden" action="https://echo.htmlacademy.ru" method="post">
             <label for="email" class="visually-hidden">
               <input type="email" id="email" name="email" placeholder="Электронная почта">
             </label>
@@ -73,6 +75,8 @@
           <a class="work-hours-phone" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </ul>
+      </div>
+      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -197,20 +201,22 @@
         </li>
       </ul>
     </section>
-    <article class="news">
+    
+    <div class="news-subscribe">
+    <article class="news box-size">
       <h3 class="news-title">Новое в нашем блоге</h3>
         <a class="news-item" href="#">10 способов сервировки
             фруктовых щербетов к столу.</a>
     </article>
-    <section class="subscribe">
+    <section class="subscribe box-size">
       <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subcribe-form">
         <label class="visually-hidden" for="email-form"></label>
         <input type="email" id="email-form" name="email" value="Электронная почта">
         <button class="button" type="submit">Отправить</button>
       </form>
-
     </section>
+    </div>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <img src="img/map-pin.jpg" width="1200" height="640" alt="Наш адрес на карте">

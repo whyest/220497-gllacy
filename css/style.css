@@ -35,6 +35,7 @@ html {
   font-weight: 400;
   color: #ffffff;
   text-transform: none;
+  background-color: #849d8f;
   /*
     Дополнительные цвета фона при переключении слайдера
 
@@ -49,7 +50,7 @@ html {
   background-image: url("../img/ice-cream-1.png");
   background-repeat: no-repeat;
   background-position: top center;
-  
+
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -75,16 +76,24 @@ html {
 }
 
 .main-header {
-  height: 120px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 100px;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+  margin-right: 23px;
+  margin-left: 27px;
+  margin-top: 9px;
+  display: block;
 }
 
 .slider {
   position: relative;
-  
-/*margin-top: 100px;*/
-  
-  padding-top: 321px;
+
+  padding-top: 221px;
   
   text-align: center;
   color: #ffffff;
@@ -197,7 +206,27 @@ a {
   text-decoration: none;
 }
 
-main-navigation {
+/* Навигация сайта _+++++++++++++++++++++++++*/
+
+.main-navigation {
+  width: 100%;
+  display: inline-block
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px dotted #666;
+}
+
+.nav-container {
+  width: 940px;
+  margin: 0 30px 0 204px;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper .catalog-link {
   display: inline-block;
 }
 
@@ -205,6 +234,8 @@ main-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  min-height: 70px;
 }
 
 .site-navigation a:hover,
@@ -231,6 +262,8 @@ main-navigation {
   color: #ffffff;
   text-transform: none;
   text-decoration: none;
+  
+  min-height: 70px;
 }
 
 .sub-menu {
@@ -311,6 +344,10 @@ main-navigation {
 }
 
 .feature-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -336,7 +373,15 @@ main-navigation {
   background-color: #e84f37;
 }
 
+feature-item {
+ width: 560px;
+}
+
 .catalog-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -347,6 +392,12 @@ main-navigation {
   color: #ffffff;
 }
 
+.catalog-item-image img {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+}
+
 .kilo {
   font-size: 30px;
   line-height: 45px;
@@ -354,11 +405,16 @@ main-navigation {
   color: #ffffff;
 }
 
-.catalog-item-title {
+.catalog-item-title .span {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
+}
+
+catalog-iceCream {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-link {
@@ -381,17 +437,50 @@ main-navigation {
 .company {
   color: #323232;
   background-color: #f2e9d1;
+  background-image: url("../img/waffle-big.jpg");
+  background-position: top center;
+  width: 1146px;
+  height: 306px;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-right: 80px;
+  margin-bottom: 37px;
 }
 
-.company-info {
+.company-info h2{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  padding: 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-basis: auto;
+  list-style: none;
+}
+
+.advantages-item {
+  width: 525px;
+  
 }
 
 .news {
   color: #323232;
   background-color: #ffffff;
+}
+
+.news-subscribe {
+    display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.box-size {
+  width: 558px;
+  height: 220px;
 }
 
 .news-title {
@@ -603,7 +692,12 @@ main-navigation {
   color: #000000;
 }
 
-
+.main-footer {
+  min-height: 102px;
+  width: 100%;
+  background-color: #666;
+  border: 1px dotted black;
+}
 
 
 
