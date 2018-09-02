@@ -52,6 +52,7 @@ html {
   background-position: top center;
   padding: 0 27px;
   padding: 0 27px;
+  padding-top: 200px;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -459,7 +460,7 @@ a {
   color: #ffffff;
 }
 
-.catalog-item-title .span {
+.catalog-item-title {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -705,14 +706,14 @@ a {
   font-weight: 400;
   color: #323232;
 }
-
+/*
 .catalog-item-title {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
 }
-
+*/
 .rouble {
   color: #999999;
 }
