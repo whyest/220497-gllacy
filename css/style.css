@@ -51,9 +51,6 @@ html {
   background-repeat: no-repeat;
   background-position: top center;
   padding: 0 27px;
-  padding: 0 27px;
-  padding-top: 200px;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -95,11 +92,10 @@ html {
 
 .slider {
   position: relative;
-
-  padding-top: 221px;
-  
+  padding-top: 185px;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 39px;
 }
 
 .slider-list {
@@ -126,16 +122,19 @@ html {
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/ice-cream-1.png");
+  background-position: center 83px;
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/ice-cream-2.png");
+  background-position: center 83px;
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/ice-cream-3.png");
+  background-position: center 83px;
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
@@ -148,6 +147,10 @@ html {
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
+}
+
+.site-catalog-wrapper {
+  background-image: none;
 }
 
 .button {
@@ -213,7 +216,7 @@ a {
 
 .main-navigation {
   width: 100%;
-  display: inline-block
+  display: flex;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px dotted #666;
 }
@@ -234,6 +237,7 @@ a {
 }
 
 .user-navigation {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -256,6 +260,7 @@ a {
 }
 
 .site-navigation {
+      display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -346,9 +351,14 @@ a {
   color: #ffffff;
 }
 
+.feature {
+  margin-bottom: 40px;
+}
+
 .feature-item {
  width: 560px;
  height: 228px;
+  padding: 20px;
   border-radius: 17px;
 }
 
@@ -357,6 +367,7 @@ a {
   background-image: url("../img/raspeberry-bgr.jpg");
   background-repeat: no-repeat;
   margin-right: 26px;
+  background-position-x: -1px;
 }
 
 .feature-item-chocolate {
@@ -379,8 +390,6 @@ a {
   font-weight: 700;
   color: #ffffff;
     margin: 0;
-    margin-left: 20px;
-    margin-top: 13px;
     margin-bottom: 16px;
 }
 
@@ -391,18 +400,12 @@ a {
   color: #ffffff;
   width: 526px;
     margin: 0;
-    margin-left: 20px;
-}
-
-.feature-item .feature-btn {
-  position: relative;
-  top: 120px;
-  left: 120px;
 }
 
 .feature-btn {
   display: inline-block;
   padding: 12px 44px;
+  margin-top: 46px;
 
   font-weight: 700;
   font-size: 18px;
@@ -422,6 +425,14 @@ a {
   cursor: pointer;
 }
 
+.feature-btn-raspberry {
+  margin-left: 312px;
+}
+
+.feature-btn-chocolate {
+  margin-left: 286px;
+}
+
 .feature-btn:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -434,23 +445,50 @@ a {
 
 .catalog-list {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
 
+.hit {
+ position: relative;
+  top: -205px;
+  left: -294px;
+}
+
+.catalog-item-info {
+  width: 265px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 .catalog-category {
+  position: relative;
+  top: -15px;
+  left: -360px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.catalog-item-image {
+/* Как добавить пробел для /кг??
+.catalog-category::after {
+ content: url("../img/ruble.svg");
+}
+*/
+
+.catalog-item-img {
   width: 267px;
   height: 267px;
   border-radius: 50%;
+  margin-right: 23px;
+}
+
+.catalog-item-img:last-child {
+  margin-right: 0;
 }
 
 .kilo {
@@ -465,6 +503,7 @@ a {
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
+  text-align: center;
 }
 
 .catalog-iceCream {
@@ -545,12 +584,20 @@ a {
 .box-size {
   width: 558px;
   height: 220px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.news {
+  background-image: url("../img/straberry-bkg.jpg");
 }
 
 .news-title {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 .news-item {
@@ -559,6 +606,10 @@ a {
   font-weight: 700;
   color: #323232;
   text-decoration: underline;
+/* +++++++++++++++ Почему не работает ширина? ++++++++++++++ Добавил <br> в разметку
+  width: 40px;
+  
+*/
 }
 
 .news-item:hover {
@@ -700,20 +751,6 @@ a {
   background-color: #f8f7f4;
 }
 
-.catalog-item-info {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-}
-/*
-.catalog-item-title {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-}
-*/
 .rouble {
   color: #999999;
 }

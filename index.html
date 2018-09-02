@@ -42,6 +42,7 @@
         <li><a class="catalog-link" href="about-us.html">О Компании</a>
         </li>
       </ul>
+      <div class="user-navigation-container">
       <ul class="user-navigation">
         <li class="search"><span class="visually-hidden">Поиск</span>
           <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
@@ -70,11 +71,13 @@
         </li>
         <li class="your-order"><a href="basket.html">Пусто</a>
         </li>
+        </ul>
+      
         <div class="work-hours">
           <p class="work-hours-time">С 10 до 20, ежедневно</p>
           <a class="work-hours-phone" href="tel:88124502525">8 812 450-25-25</a>
         </div>
-      </ul>
+        </div>
       </div>
       </div>
     </nav>
@@ -117,12 +120,12 @@
         <li class="feature-item feature-item-raspberry">
           <h3 class="feature-title">Малинка даром!</h3>
           <p class="feature-desc">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="feature-btn " href="#">Хочу варенье!</a>
+          <a class="feature-btn feature-btn-raspberry" href="#">Хочу варенье!</a>
         </li>
         <li class="feature-item feature-item-chocolate">
           <h3 class="feature-title">Шоколадки даром!</h3>
           <p class="feature-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="feature-btn" href="#">Хочу шоколадки!</a>
+          <a class="feature-btn feature-btn-chocolate" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
     </section>
@@ -133,10 +136,10 @@
           <a href="#">
             <figure class="catalog-iceCream">
               <img class="catalog-item-img" src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img class="hit" src="img/hit.svg" width="61" height="61" alt="хит">
+              <span class="catalog-category">310 &#8381 <span class="kilo">/кг</span></span>
               <figcaption class="catalog-item-info">
-                <span class="catalog-category">310 &#8381 <span class="kilo">/кг</span></span>
                 <span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                <img src="img/hit.svg" width="61" height="61" alt="хит">
               </figcaption>
             </figure>
           </a>
@@ -146,10 +149,10 @@
           <a href="#">
             <figure class="catalog-iceCream">
               <img class="catalog-item-img" src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <img class="hit" src="img/hit.svg" width="61" height="61" alt="хит">
+                     <span class="catalog-category">380 &#8381<span class="kilo">/кг</span></span>
               <figcaption class="catalog-item-info">
-                <span class="catalog-category">380 &#8381<span class="kilo">/кг</span></span>
-                <span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
-                <img src="img/hit.svg" width="61" height="61" alt="хит">
+                <span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span> 
               </figcaption>
             </figure>
           </a>
@@ -158,10 +161,10 @@
           <a href="#">
             <figure class="catalog-iceCream">
               <img class="catalog-item-img" src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img class="hit" src="img/hit.svg" width="61" height="61" alt="хит">
+              <span class="catalog-category">355 &#8381<span class="kilo">/кг</span></span>
               <figcaption class="catalog-item-info">
-                <span class="catalog-category">355 &#8381<span class="kilo">/кг</span></span>
                 <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
-                <img src="img/hit.svg" width="61" height="61" alt="хит">
               </figcaption>
             </figure>
           </a>
@@ -170,10 +173,10 @@
           <a href="#">
             <figure class="catalog-iceCream">
               <img class="catalog-item-img" src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <img class="hit" src="img/hit.svg" width="61" height="61" alt="хит">
+              <span class="catalog-category">415 &#8381<span class="kilo">/кг</span></span>
               <figcaption class="catalog-item-info">
-                <span class="catalog-category">415 &#8381<span class="kilo">/кг</span></span>
                 <span class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</span>
-                <img src="img/hit.svg" width="61" height="61" alt="хит">
               </figcaption>
             </figure>
           </a>
@@ -209,8 +212,8 @@
     <div class="news-subscribe">
     <article class="news box-size">
       <h3 class="news-title">Новое в нашем блоге</h3>
-        <a class="news-item" href="#">10 способов сервировки
-            фруктовых щербетов к столу.</a>
+        <a class="news-item" href="#">10 способов сервировки<br>
+            фруктовых щербетов к<br> столу.</a>
     </article>
     <section class="subscribe box-size">
       <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
