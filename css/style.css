@@ -215,10 +215,44 @@ a {
 
 .user-navigation {
   display: flex;
+  vertical-align: top;
   margin: 0;
   padding: 0;
+  padding-top: 13px;
   list-style: none;
   min-height: 70px;
+}
+
+.user-nav-btn {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 96px;
+  padding: 9px 16px;
+  padding-left: 40px;
+  margin-left: 7px;
+  border-radius: 50px;
+  background-color: #9EB2A7;
+}
+
+.user-nav-btn:hover {
+  background: #f8f7f4;
+}
+
+
+.search:hover path,
+.search:hover {
+  fill: #323232;
+  background-color: #f8f7f4;
+}
+
+.search {
+  width: 35px;
+  height: 35px;
+  padding: 9px;
+  border-radius: 50px;
+  background-color: #9EB2A7;
 }
 
 .user-navigation a:hover,
@@ -283,6 +317,27 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   padding-left: 11px;
 }
 
+/* ========= Почему скачет текст??? ======= */
+
+.sub-menu-item:hover {
+  background-color: #FBDED7;
+  width: 143px;
+  margin-left: -6px;
+}
+
+.sub-menu-item:active {
+  background-color: #F6B5A5;
+  width: 143px;
+  margin-left: -6px;
+}
+
+.new-sub:hover {
+  padding-top: 10px;
+  background-color: #FBDED7;
+  width: 143px;
+  margin-left: -6px;
+}
+
 .sub-menu-link {
   color: #323232;
 }
@@ -291,32 +346,32 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.login-link {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
-.your-order {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+.work-hours {
+  color: #fff;
+  margin-left: 66px;
 }
 
 .work-hours-time {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  padding: 0;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  margin: 0;
 }
 
 .work-hours-phone {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs {
