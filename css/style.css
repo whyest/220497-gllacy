@@ -1,7 +1,3 @@
-img {
-  max-width: 100%;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -12,6 +8,14 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -36,12 +40,6 @@ html {
   color: #ffffff;
   text-transform: none;
   background-color: #849d8f;
-  /*
-    Дополнительные цвета фона при переключении слайдера
-
-    background-color: #8996A6;
-    background-color: #9D8B84;
-    */
 }
 
 .site-wrapper {
@@ -72,22 +70,18 @@ html {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 27px;
 }
 
 .main-header {
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.4);
   margin-bottom: 100px;
 }
 
 .main-header-logo {
+  display: block;
   width: 154px;
   height: 64px;
-  margin-right: 23px;
-  margin-left: 27px;
-  margin-top: 9px;
-  display: block;
+  margin-right: 10px;
 }
 
 .slider {
@@ -101,7 +95,7 @@ html {
 .slider-list {
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -109,7 +103,7 @@ html {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-  
+
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -204,12 +198,8 @@ html {
   bottom: 63px;
   left: 0;
   z-index: 20;
-  
-  font-size: 0;
-}
 
-a {
-  text-decoration: none;
+  font-size: 0;
 }
 
 /* Навигация сайта _+++++++++++++++++++++++++*/
@@ -217,23 +207,10 @@ a {
 .main-navigation {
   width: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px dotted #666;
-}
-
-.nav-container {
-  width: 940px;
-  margin: 0 30px 0 204px;
-  padding: 0 10px;
-}
-
-.main-navigation-wrapper .nav-container {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 10px;
 }
 
 .main-navigation-wrapper .catalog-link {
-  display: inline-block;
 }
 
 .user-navigation {
@@ -241,15 +218,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  
   min-height: 70px;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #F7F6F3;
-  color: #333333;
-  text-decoration: none;
 }
 
 .user-navigation a:hover,
@@ -260,7 +229,7 @@ a {
 }
 
 .site-navigation {
-      display: flex;
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -270,12 +239,17 @@ a {
   color: #ffffff;
   text-transform: none;
   text-decoration: none;
-  
+  padding-top: 13px;
   min-height: 70px;
 }
 
+
 .sub-menu {
-  padding: 0;
+  position:  absolute;
+  top: 31px;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 20px;
   margin: 0;
   margin-top: 10px;
   width: 143px;
@@ -287,6 +261,8 @@ a {
   list-style: none;
   display: none;
   text-decoration: none;
+box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
+  border-radius: 5px;
 }
 
 .sub-menu-link {
@@ -297,6 +273,12 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+}
+
+.bottom-line {
+   width: 128px;
+  margin-left: -10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .login-link {
@@ -327,7 +309,7 @@ a {
   list-style: none;
 }
 
-.fat-list{
+.fat-list {
   list-style: none;
 }
 
@@ -356,8 +338,8 @@ a {
 }
 
 .feature-item {
- width: 560px;
- height: 228px;
+  width: 560px;
+  height: 228px;
   padding: 20px;
   border-radius: 17px;
 }
@@ -389,8 +371,8 @@ a {
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
-    margin: 0;
-    margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .feature-desc {
@@ -399,7 +381,7 @@ a {
   font-weight: 700;
   color: #ffffff;
   width: 526px;
-    margin: 0;
+  margin: 0;
 }
 
 .feature-btn {
@@ -451,9 +433,14 @@ a {
 }
 
 .hit {
- position: relative;
+  position: relative;
   top: -205px;
   left: -294px;
+}
+
+.catalog-item {
+  position: relative;
+  width: 293px;
 }
 
 .catalog-item-info {
@@ -474,19 +461,16 @@ a {
   color: #ffffff;
 }
 
-
+/* Как добавить пробел для /кг??
 .catalog-category::after {
  content: url("../img/ruble.svg");
-  
-  
 }
-
+*/
 
 .catalog-item-img {
   width: 267px;
   height: 267px;
   border-radius: 50%;
-  margin-right: 23px;
 }
 
 .catalog-item-img:last-child {
@@ -498,7 +482,6 @@ a {
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
-  margin-left: 26px;
 }
 
 .catalog-item-title {
@@ -514,21 +497,31 @@ a {
   margin: 0;
 }
 
+.catalog-navigation {
+  position: relative;
+  margin-right: 2px;
+  margin-bottom: 15px;
+}
+
 .catalog-link {
   display: inline-block;
   vertical-align: center;
+  padding: 7px 13px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #acbdb3;
 }
 
-.catalog-navigation:hover .catalog-link {
+.catalog-link:hover,
+.catalog-link:focus {
+  background-color: #F7F6F3;
   color: #333333;
-  background: #F7F6F3;
-  padding: 5px;
-  border-radius: 5px;
-
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 7px 13px;
 }
 
 .company {
@@ -570,7 +563,7 @@ a {
 
 .advantages-item {
   width: 525px;
-  
+
 }
 
 .news {
@@ -579,7 +572,7 @@ a {
 }
 
 .news-subscribe {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 37px;
 }
@@ -609,10 +602,10 @@ a {
   font-weight: 700;
   color: #323232;
   text-decoration: underline;
-/* +++++++++++++++ Почему не работает ширина? ++++++++++++++ Добавил <br> в разметку
-  width: 40px;
-  
-*/
+  /* +++++++++++++++ Почему не работает ширина? ++++++++++++++ Добавил <br> в разметку
+    width: 40px;
+
+  */
 }
 
 .news-item:hover {
