@@ -474,11 +474,13 @@ a {
   color: #ffffff;
 }
 
-/* Как добавить пробел для /кг??
+
 .catalog-category::after {
  content: url("../img/ruble.svg");
+  
+  
 }
-*/
+
 
 .catalog-item-img {
   width: 267px;
@@ -496,6 +498,7 @@ a {
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
+  margin-left: 26px;
 }
 
 .catalog-item-title {
