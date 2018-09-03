@@ -73,10 +73,6 @@ a {
   padding: 0 27px;
 }
 
-.main-header {
-  margin-bottom: 100px;
-}
-
 .main-header-logo {
   display: block;
   width: 154px;
@@ -86,7 +82,7 @@ a {
 
 .slider {
   position: relative;
-  padding-top: 75px;
+  padding-top: 265px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 39px;
@@ -142,6 +138,20 @@ a {
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
+
+#product-1:hover ~ .site-wrapper label[for="product-1"],
+#product-2:hover ~ .site-wrapper label[for="product-2"],
+#product-3:hover ~ .site-wrapper label[for="product-3"] {
+  background-color: #b2c1b7;
+  cursor: pointer;
+}
+
+#product-1:visited ~ .site-wrapper label[for="product-1"],
+#product-2:visited ~ .site-wrapper label[for="product-2"],
+#product-3:visited ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
 
 .site-catalog-wrapper {
   background-image: none;
