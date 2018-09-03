@@ -583,11 +583,23 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 
 .advantages-item {
+  position: relative;
   font-size: 16px;
   line-height: 22px;
-  width: 545px;
+  width: 537px;
   margin-bottom: 15px;
+  padding-left: 57px;
+}
 
+.advantages-item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #e1613e;
+  top: 0;
+  left: 0;
+  
 }
 
 .news {
@@ -626,10 +638,8 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   font-weight: 700;
   color: #323232;
   text-decoration: underline;
-  /* +++++++++++++++ Почему не работает ширина? ++++++++++++++ Добавил <br> в разметку
-    width: 40px;
-
-  */
+  display: block;
+    width: 300px;
 }
 
 .news-item:hover {
