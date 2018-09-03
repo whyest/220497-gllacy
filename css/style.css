@@ -86,7 +86,7 @@ a {
 
 .slider {
   position: relative;
-  padding-top: 185px;
+  padding-top: 75px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 39px;
@@ -228,6 +228,10 @@ a {
   text-decoration: none;
 }
 
+.user-navigation-container {
+  margin-left: auto;
+}
+
 .site-navigation {
   display: flex;
   padding: 0;
@@ -243,13 +247,22 @@ a {
   min-height: 70px;
 }
 
+.nav-container {
+  display: flex;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+}
+
 
 .sub-menu {
   position:  absolute;
   top: 31px;
   left: 0;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 6px;
+  padding-right: 9px;
   margin: 0;
   margin-top: 10px;
   width: 143px;
@@ -265,6 +278,11 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   border-radius: 5px;
 }
 
+.sub-menu-item {
+  width: 100%;
+  padding-left: 11px;
+}
+
 .sub-menu-link {
   color: #323232;
 }
@@ -273,11 +291,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-}
-
-.bottom-line {
-   width: 128px;
-  margin-left: -10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -433,14 +447,19 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 
 .hit {
-  position: relative;
-  top: -205px;
-  left: -294px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .catalog-item {
   position: relative;
-  width: 293px;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item-info {
@@ -452,9 +471,9 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 
 .catalog-category {
-  position: relative;
-  top: -15px;
-  left: -360px;
+  position: absolute;
+  top: 214px;
+  left: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -471,10 +490,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   width: 267px;
   height: 267px;
   border-radius: 50%;
-}
-
-.catalog-item-img:last-child {
-  margin-right: 0;
+  margin-bottom: 12px;
 }
 
 .kilo {
@@ -489,12 +505,15 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
+  display: block;
   text-align: center;
 }
 
 .catalog-iceCream {
   padding: 0;
   margin: 0;
+  position: relative;
+  
 }
 
 .catalog-navigation {
@@ -524,6 +543,8 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   padding: 7px 13px;
 }
 
+
+
 .company {
   color: #323232;
   background-color: #f2e9d1;
@@ -534,8 +555,8 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   background-repeat: no-repeat;
   border-radius: 14px;
   padding-top: 22px;
-  padding-left: 21px;
-  padding-right: 80px;
+  padding-left: 29px;
+  padding-right: 31px;
   margin-bottom: 37px;
 }
 
@@ -549,7 +570,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -562,7 +583,10 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 
 .advantages-item {
-  width: 525px;
+  font-size: 16px;
+  line-height: 22px;
+  width: 545px;
+  margin-bottom: 15px;
 
 }
 
