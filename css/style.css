@@ -67,11 +67,17 @@ a {
   background-image: url("../img/ice-cream-3.png");
 }
 
+.site-catalog-wrapper {
+  background-image: none;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
 }
+
+/*========= Navigation ============*/
 
 .main-header-logo {
   display: block;
@@ -152,11 +158,6 @@ a {
   background-color: #ffffff;
 }
 
-
-.site-catalog-wrapper {
-  background-image: none;
-}
-
 .button {
   display: inline-block;
   padding: 12px 44px;
@@ -220,6 +221,21 @@ a {
   padding-top: 10px;
 }
 
+.site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: none;
+  text-decoration: none;
+  padding-top: 13px;
+  min-height: 70px;
+}
+
 .user-navigation {
   display: flex;
   vertical-align: top;
@@ -228,6 +244,21 @@ a {
   padding-top: 13px;
   list-style: none;
   min-height: 70px;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #9FB3A8;
+  color: #323232;
+  text-decoration: none;
+}
+
+.user-navigation-container {
+  margin-left: auto;
+}
+
+.nav-container {
+  display: flex;
 }
 
 .login-link::before {
@@ -290,36 +321,6 @@ a {
   padding: 9px;
   border-radius: 50px;
   background-color: #9EB2A7;
-}
-
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #9FB3A8;
-  color: #323232;
-  text-decoration: none;
-}
-
-.user-navigation-container {
-  margin-left: auto;
-}
-
-.site-navigation {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: none;
-  text-decoration: none;
-  padding-top: 13px;
-  min-height: 70px;
-}
-
-.nav-container {
-  display: flex;
 }
 
 .main-navigation-wrapper {
@@ -411,9 +412,54 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   margin: 0;
 }
 
+/* ============== BREADCRUMBS ==============*/
+
+.breadcrumbs-current {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .breadcrumbs {
+  display: flex;
+
+font-size: 14px;
+  font-weight: 400;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 16px;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #A9BAB0;
+  margin-bottom: 3px;
+  
   list-style: none;
 }
+
+.breadcrumbs a {
+  color: #fff;
+}
+
+.breadcrumbs li {
+  margin-right: 22px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #FFBC9E;
+  text-decoration: underline;
+  text-decoration-color: #a8a184;
+}
+
+.ice-cream {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 .fat-list {
   list-style: none;
@@ -560,6 +606,8 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #9cb0a5;
 }
 
 .catalog-category {
@@ -571,12 +619,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   font-weight: 700;
   color: #ffffff;
 }
-
-/* Как добавить пробел для /кг??
-.catalog-category::after {
- content: url("../img/ruble.svg");
-}
-*/
 
 .catalog-item-img {
   width: 267px;
@@ -635,8 +677,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   padding: 7px 13px;
 }
 
-
-
 .company {
   color: #323232;
   background-color: #f2e9d1;
@@ -687,17 +727,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   left: 0;
 }
 
-.news {
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.news-subscribe {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 37px;
-}
-
 .box-size {
   width: 558px;
   height: 220px;
@@ -706,7 +735,15 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 
 .news {
+  color: #323232;
+  background-color: #ffffff;
   background-image: url("../img/straberry-bkg.jpg");
+}
+
+.news-subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
 }
 
 .news-title {
@@ -729,10 +766,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 
 .news-item:hover {
   text-decoration: none;
-}
-
-.news-item a {
-  color: #323232;
 }
 
 .subscribe {
@@ -866,14 +899,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   color: #323232;
 }
 
-.orders {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-  background-color: #f8f7f4;
-}
-
 .rouble {
   color: #999999;
 }
@@ -891,10 +916,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   font-weight: 700;
   color: #fefefe;
   background-color: #e74a35;
-}
-
-.catalog-item a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .option-item {

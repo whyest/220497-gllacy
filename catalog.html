@@ -17,36 +17,42 @@
       <a class="main-header-logo">
         <img class="logo-img" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного Глейси">
       </a>
+      <div class="main-navigation-wrapper">
+      <div class="nav-container">
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a>
+        <li class="catalog-navigation"><a class="catalog-link" href="catalog.html">Каталог</a>
           <ul class="sub-menu">
-            <li><a href="#1">Новинки</a>
+            <li class="new-sub sub-menu-item"><a class="sub-menu-link" href="#1">Новинки</a>
             </li>
-            <li><a href="#2">Сливочное</a>
+            <li class="sub-menu-item"><a class="sub-menu-link" href="#2">Сливочное</a>
             </li>
-            <li><a href="#3">Щербеты</a>
+            <li class="sub-menu-item"><a class="sub-menu-link" href="#3">Щербеты</a>
             </li>
-            <li><a href="#4">Фруктовый лед</a>
+            <li class="sub-menu-item"><a class="sub-menu-link" href="#4">Фруктовый лед</a>
             </li>
-            <li><a href="#5">Мелорин</a>
+            <li class="sub-menu-item"><a class="sub-menu-link" href="#5">Мелорин</a>
             </li>
           </ul>
         </li>
-        <li><a href="delivery.html">Доставка и оплата</a>
+        <li><a class="catalog-link" href="delivery.html">Доставка и оплата</a>
         </li>
-        <li><a href="about-us.html">О Компании</a>
+        <li><a class="catalog-link" href="about-us.html">О Компании</a>
         </li>
       </ul>
+      <div class="user-navigation-container">
       <ul class="user-navigation">
-        <li class="search visually-hidden"><a href="search.html">Поиск</a>
-          <form class="modal search">
+        <li class="search"><span class="visually-hidden">Поиск</span>
+          <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+            <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+          </svg>
+          <form class="modal modal-search">
             <label for="search-navigation" class="visually-hidden">Что ищем?</label>
             <input type="search" id="search-navigation" name="search" placeholder="Что ищем?">
           </form>
         </li>
 
-        <li class="login-link"><a href="login.html">Вход</a>
-          <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
+        <li class="login-link"><a class="user-nav-btn" href="login.html">Вход</a>
+          <form class="modal modal-login visually-hidden" action="https://echo.htmlacademy.ru" method="post">
             <label for="email" class="visually-hidden">
               <input type="email" id="email" name="email" placeholder="Электронная почта">
             </label>
@@ -54,18 +60,19 @@
               <input type="text" id="password" name="password" placeholder="Пароль">
             </label>
             <button type="button" class="enter-btn">Войти</button>
-            <p><a href="#">Забыли пароль?</a>
+            <p><a class="forget-pass" href="#">Забыли пароль?</a>
             </p>
-            <p><a href="#">Новая регистрация</a>
+            <p><a class="new-registration" href="#">Новая регистрация</a>
             </p>
           </form>
         </li>
-        <li class="orders"><a href="basket.html">2 товара</a>
-          <form class="modal orders">
+        
+        <li class="your-order"><a class="user-nav-btn" href="basket.html">2 товара</a>
+          <form class="modal orders visually-hidden">
             <ul class="orders-list">
               <li>
                 <figure class="catalog-iceCream">
-                  <img class="catalog-item-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  <img class="catalog-item-img basket-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   <figcaption class="catalog-item-info">
                     <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
                     <span class="catalog-item-kilo">1,5 кг х <div class="rouble">200 руб.</div></span>
@@ -75,7 +82,7 @@
               </li>
               <li>
                 <figure class="catalog-iceCream">
-                  <img class="catalog-item-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <img class="catalog-item-img basket-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   <figcaption class="catalog-item-info">
                     <span class="catalog-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
                     <span class="catalog-item-kilo">1,5 кг х <div class="rouble">300 руб.</div></span>
@@ -88,11 +95,14 @@
             <button type="submit" class="item-order button">Оформить заказ</button>
           </form>
         </li>
-        <section class="work-hours">
+        </ul>
+         <div class="work-hours">
           <p class="work-hours-time">С 10 до 20, ежедневно</p>
-          <p class="work-hours-phone">8 812 450-25-25</p>
-        </section>
-      </ul>
+          <a class="work-hours-phone" href="tel:88124502525">8 812 450-25-25</a>
+        </div>
+        </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="container">
