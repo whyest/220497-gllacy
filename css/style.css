@@ -220,9 +220,6 @@ a {
   padding-top: 10px;
 }
 
-.main-navigation-wrapper .catalog-link {
-}
-
 .user-navigation {
   display: flex;
   vertical-align: top;
@@ -231,6 +228,36 @@ a {
   padding-top: 13px;
   list-style: none;
   min-height: 70px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 24px;
+  left: 1115px;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
+}
+
+.your-order::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 24px;
+  left: 1210px;
 }
 
 .user-nav-btn {
@@ -466,7 +493,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 .feature-btn {
   display: inline-block;
   padding: 12px 44px;
-  margin-top: 46px;
+  margin-top: 41px;
 
   font-weight: 700;
   font-size: 18px;
@@ -641,12 +668,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   padding: 0;
 }
 
-.company-col-left,
-.company-col-right {
-  width: 572px;
-  padding: 0 15px;
-}
-
 .advantages-item {
   position: relative;
   font-size: 16px;
@@ -664,7 +685,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   background: #e1613e;
   top: 0;
   left: 0;
-  
 }
 
 .news {
@@ -718,12 +738,20 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 .subscribe {
   color: #5a5a5a;
   background-color: #f8f7f4;
+  border: 10px solid transparent;
+  border-image: url("../img/postal-bgd.jpg");
+  border-image-repeat: repeat;
+  display: block;
 }
 
 .subscribe-text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #5a5a5a;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .subscribe-form {
