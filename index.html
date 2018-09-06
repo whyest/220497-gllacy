@@ -235,7 +235,7 @@
             <p class="contacts-order">Для заказов по телефону:</p>
             <p class="contacts-tel">8 812 450-25-25</p>
             <p class="contacts-open">(с 10 до 20 ежедневно)</p>
-            <a class="feedback-btn" href="#">Форма обратной связи</a>
+            <a class="contacts-btn" href="#">Форма обратной связи</a>
         </address>
 
     </section>
@@ -282,19 +282,19 @@
 
     <form class="modal modal-feedback">
       <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
-      <button class="modal-close visually-hidden" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>Закрыть</button>
       <p>
-        <label for="username" class="visually-hidden">
+        <label for="username" class="user-name">
           <input type="text" id="username" name="name" placeholder="Как вас зовут?" required>
         </label>
       </p>
       <p>
-        <label for="userpassword" class="visually-hidden">
+        <label for="userpassword" class="user-password">
           <input type="email" id="userpassword" name="email" placeholder="Ваша почта для ответа" required>
         </label>
       </p>
-      <textarea type="text" rows="10" cols="50" placeholder="Напишите что-нибудь..." required></textarea>
-      <button class="button" type="submit">Отправить</button>
+      <textarea type="text" rows="10" cols="50" placeholder="Напишите что-нибудь..."  class="modal-textarea" required></textarea>
+      <button class="feedback-btn" type="submit">Отправить</button>
     </form>
   </main>
   </div>
