@@ -71,13 +71,14 @@ a {
   width: 154px;
   height: 64px;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .slider {
   position: relative;
-  padding-top: 265px;
+  padding-top: 274px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
 }
 .slider-list {
   margin: 0;
@@ -87,7 +88,7 @@ a {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -133,10 +134,11 @@ a {
 }
 .button {
   display: inline-block;
-  padding: 12px 44px;
+  padding: 12px 39px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
+  letter-spacing: 1.1px;
   text-align: center;
   color: #ffffff;
   vertical-align: top;
@@ -159,9 +161,9 @@ a {
 }
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
+  width: 20px;
+    height: 20px;
+    margin-right: 9px;
   vertical-align: top;
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -170,9 +172,9 @@ a {
 }
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 20px;
   left: 0;
-  z-index: 20;
+  z-index: 1;
   font-size: 0;
 }
 /* Навигация сайта _+++++++++++++++++++++++++*/
@@ -199,17 +201,12 @@ a {
 .user-navigation {
   display: flex;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 18px;
   list-style: none;
-  min-height: 70px;
 }
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #9FB3A8;
-  color: #323232;
-  text-decoration: none;
-}
+
 .user-navigation-container {
   margin-left: auto;
 }
@@ -226,23 +223,30 @@ a {
   padding-left: 40px;
   margin-left: 7px;
   border-radius: 50px;
-  background-color: #9EB2A7;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .login-link .user-nav-btn:hover {
   background: #f8f7f4;
+  
 }
 .login-link {
   position: relative;
+  padding: 0 5px;
 }
 .login-link svg {
   position: absolute;
   top: 2px;
-  left: 20px;
+  left: 25px;
 }
 .login-link:hover path,
+.login-link:hover circle {
+   fill: #323232;
+   stroke: #323232;
+}
 .user-nav-btn:hover {
-  fill: #323232;
   background-color: #f8f7f4;
+  color: #323232;
+  text-decoration: none;
 }
 
 
@@ -380,28 +384,32 @@ line-height: 24px;
   padding: 0;
 }
 
-
 .your-order {
   position: relative;
+  padding: 0 3px;
 }
 .your-order svg {
   position: absolute;
   top: 2px;
-  left: 20px;
-}
-.search:hover path,
-.search:hover {
-  fill: #323232;
-  background-color: #f8f7f4;
+  left: 23px;
 }
 
-
+.your-order .user-nav-btn:hover {
+  background: #f8f7f4;
+}
 
 .your-order:hover path,
-.user-nav-btn:hover {
+.your-order:hover circle {
+   fill: #323232;
+   stroke: #323232;
+}
+.search:hover path {
   fill: #323232;
+}
+.search:hover {
   background-color: #f8f7f4;
 }
+
 .search {
   position: relative;
   width: 35px;
@@ -409,7 +417,7 @@ line-height: 24px;
   padding: 9px;
   margin-top: -6px;
   border-radius: 50px;
-  background-color: #9EB2A7;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .modal-search {
@@ -455,23 +463,18 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   border: 1px solid rgba(46, 136, 228, 0.5);
 }
 
-
-
-
-
 .main-navigation-wrapper {
   width: 100%;
 }
 .sub-menu {
   position: absolute;
-  top: 31px;
+  top: 35px;
   left: 0;
   padding-top: 10px;
   padding-left: 6px;
   padding-right: 9px;
   margin: 0;
-  margin-top: 10px;
-  width: 143px;
+  width: 146px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -487,22 +490,24 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   width: 100%;
   padding-left: 11px;
 }
-/* ========= Почему скачет текст??? ======= */
 
 .sub-menu-item:hover {
   background-color: #FBDED7;
-  width: 143px;
+  width: 146px;
   margin-left: -6px;
 }
 .sub-menu-item:active {
   background-color: #F6B5A5;
-  width: 143px;
+  width: 146px;
   margin-left: -6px;
 }
 .new-sub:hover {
+  /*
   padding-top: 10px;
+  */
   background-color: #FBDED7;
-  width: 143px;
+  width: 146px;
+  height: 31px;
   margin-left: -6px;
 }
 .sub-menu-link {
@@ -517,7 +522,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 .work-hours {
   color: #fff;
-  margin-left: 66px;
+  margin-left: 79px;
 }
 .work-hours-time {
   font-size: 14px;
@@ -527,14 +532,16 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   padding-left: 15px;
   padding-bottom: 3px;
   margin: 0;
+  text-align: right;
 }
 .work-hours-phone {
   font-size: 22px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 700;
   color: #fff;
   padding: 0;
   margin: 0;
+  text-align: right;
 }
 /* ============== BREADCRUMBS ==============*/
 
@@ -630,7 +637,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 .feature-title {
   font-size: 35px;
-  line-height: 41px;
+  line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
@@ -641,13 +648,13 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-  width: 526px;
+  width: 535px;
   margin: 0;
 }
 .feature-btn {
   display: inline-block;
-  padding: 12px 44px;
-  margin-top: 41px;
+  padding: 11px 23px;
+  margin-top: 43px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -664,10 +671,10 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   cursor: pointer;
 }
 .feature-btn-raspberry {
-  margin-left: 312px;
+  margin-left: 352px;
 }
 .feature-btn-chocolate {
-  margin-left: 286px;
+  margin-left: 328px;
 }
 .feature-btn:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -707,8 +714,8 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 .catalog-category {
   position: absolute;
-  top: 214px;
-  left: 0;
+  top: 209px;
+  left: -1px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -747,7 +754,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 .catalog-link {
   display: inline-block;
-  vertical-align: center;
   padding: 7px 13px;
   font-size: 16px;
   line-height: 18px;
@@ -922,13 +928,11 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-
-
 .contacts {
   color: #323232;
   background-color: #ffffff;
   position: relative;
-  height: 640px;
+  height: 430px;
 }
 .contacts-title {
   font-size: 14px;
@@ -1031,6 +1035,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   background-color: #f8f7f4;
   border-radius: 10px;
   fill: #000000;
+  z-index: 2
 }
 
 .modal-feedback h2,
@@ -1249,7 +1254,19 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   color: #ffffff;
 }
 
-
+.modal-overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 3;
+    cursor: pointer; 
+}
 
 
 
