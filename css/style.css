@@ -596,9 +596,7 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 .pagination-list {
   list-style: none;
 }
-.social-list {
-  list-style: none;
-}
+
 .pagination-list a {
   color: #ffffff;
 }
@@ -868,18 +866,69 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   line-height: 24px;
   font-weight: 400;
   color: #999999;
+  margin: 0;
+  padding: 0;
 }
-.subscribe-form .button {
+
+.subscribe input {
+ box-sizing: border-box;
+  display: block;
+  width: 371px;
+  height: 47px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  padding: 0;
+  padding-left: 17px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.subscribe input:hover{
+  border: 2px solid rgba(154, 154, 154, 0.5);
+}
+
+.subscribe input:active{
+  border: 1px solid rgba(46, 136, 228, 0.5);
+}
+
+.subscribe-btn {
+  display: inline-block;
+  padding: 9px 20px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
-  color: #FEFEFE;
-  background-color: #E74A35;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
 }
+
+.subscribe-btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.subscribe-btn:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+
+
 .contacts {
   color: #323232;
   background-color: #ffffff;
   position: relative;
+  height: 640px;
 }
 .contacts-title {
   font-size: 14px;
@@ -964,25 +1013,6 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 .contacts-btn:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-.nav-contacts {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  list-style: none;
-}
-.nav-contacts a {
-  color: #ffffff;
-}
-.nav-contacts .nav-for-supplier {
-  font-weight: 700;
-}
-.catalog-navigation:hover .sub-menu {
-  display: block;
-}
-.made-in-html {
-  color: #ffffff;
 }
 
 /* Всплывающая форма обратной связи */
@@ -1153,8 +1183,81 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   color: #000000;
 }
 .main-footer {
+  display: flex;
   min-height: 102px;
   width: 100%;
   background-color: #666;
   border: 1px dotted black;
 }
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 27px;
+  margin-top: 35px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social ul {
+  display: flex;
+  width: 186px;
+  list-style: none;
+}
+
+.contacts-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 305px;
+}
+
+.nav-contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-contacts {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-contacts a {
+  color: #ffffff;
+}
+.nav-contacts .nav-for-supplier {
+  font-weight: 700;
+}
+.catalog-navigation:hover .sub-menu {
+  display: block;
+}
+.made-in-html {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
