@@ -84,32 +84,43 @@
                       <a class="user-nav-btn-current" href="basket.html">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a>
                       
-                    <form class="modal orders visually-hidden">
-                      <ul class="orders-list">
-                        <li>
-                          <figure class="catalog-iceCream">
-                            <img class="catalog-item-img basket-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                            <figcaption class="catalog-item-info">
-                              <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
-                              <span class="catalog-item-kilo">1,5 кг х <div class="rouble">200 руб.</div></span>
-                              <span class="catalog-price">300 руб.</span>
-                            </figcaption>
-                          </figure>
-                        </li>
-                        <li>
-                          <figure class="catalog-iceCream">
-                            <img class="catalog-item-img basket-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                            <figcaption class="catalog-item-info">
-                              <span class="catalog-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                              <span class="catalog-item-kilo">1,5 кг х <div class="rouble">300 руб.</div></span>
-                              <span class="catalog-price">450 руб.</span>
-                            </figcaption>
-                          </figure>
-                        </li>
-                      </ul>
-                      <output name="final-price">Итого:750 руб.</output>
-                      <button type="submit" class="item-order button">Оформить заказ</button>
-                    </form>
+                    <div class="modal modal-order">
+                <table class="cart-item">
+                  <tbody>
+                    <tr class="class-item-size">
+                      <td>
+                        <button class="cart-close-button-1" type="submit" value="Оформить заказ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 18 17">
+              <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" /></svg>
+                     Удалить товар</button>
+                      </td>
+                      <td>
+                        <a href="#"><img src="img/product-1.jpg" class="cart-item-image" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
+                      </td>
+                      <td class="item-width"><a href="#">Пломбир с апельсиновым джемом</a></td>
+                      <td class="item-no-wrap">1,5 кг х <span>200 руб.</span></td>
+                      <td class="item-no-wrap">300 руб.</td>
+                    </tr>
+                    <tr class="class-item-size">
+                      <td>
+                        <button class="cart-close-button-2" type="submit" value="Оформить заказ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 18 17">
+              <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" /></svg>
+                     Удалить товар</button>
+                      </td>
+                      <td>
+                        <a href="#"><img src="img/product-3.jpg" class="cart-item-image" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
+                      </td>
+                      <td class="item-width"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                      <td>1,5 кг х <span>300 руб.</span></td>
+                      <td>450 руб.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="cart-total-price">Итого: 750 руб.</div>
+                <button class="order-btn" type="submit" value="Оформить заказ">Оформить заказ</button>
+              </div>
+                
                   </li>
                 </ul>
 
