@@ -708,17 +708,14 @@ ul.breadcrumbs li + li:before {
   list-style: none;
   padding: 0 15px;
 }
-
 .catalog-list1 {
   margin-top: -46px;
   z-index: 1;
 }
-
 .catalog-list2 {
   margin-top: -70px;
   z-index: 1;
 }
-
 .catalog-list3 {
   margin-top: -69px;
   z-index: 1;
@@ -773,8 +770,8 @@ ul.breadcrumbs li + li:before {
   display: block;
   text-align: center;
   margin-bottom: 16px;
-      text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,.3);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, .3);
 }
 .catalog-iceCream {
   padding: 0;
@@ -1435,7 +1432,7 @@ ul.breadcrumbs li + li:before {
   top: 37px;
   right: 0;
   z-index: 20;
-  /* display: none; */
+  display: none;
   box-sizing: border-box;
   width: 540px;
   padding: 15px 15px 20px;
@@ -1553,57 +1550,94 @@ ul.breadcrumbs li + li:before {
 
 /* FILTER */
 
+.filter-container {
+  width: 1000px;
+
+}
 .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   padding-left: 23px;
+  margin-bottom: 40px;
 }
 .filter fieldset {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-right: 15px;
-  margin-bottom: 16px;
-  margin-top: 27px;
+  margin-right: 22px;
+    margin-bottom: -4px;
+    margin-top: 29px;
 }
 .filter legend {
+  color: #fff;
   margin-bottom: 6px;
-  padding-left: 20px;
+  padding-left: 18px;
   display: block;
 }
-.select-container select {
-  padding-top: 7px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 41px;
-  -moz-padding-start: 11px;
-  -moz-padding-end: 47px;
-  -webkit-padding-before: 9px;
-  -webkit-padding-after: 9px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #fff;
-  background-color: rgba(248, 247, 244, 0.2);
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  outline: none;
+.filter ul {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
+
+.feature-wrapper {
+    height: 36px;
+    padding: 0 15px;
+    line-height: 36px;
+    border-radius: 18px;
+  z-index: 1;
+}
+
+.feature-wrapper,
+.filter button {
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(255,255,255,.2);
+}
+.price-width {
+  width: 217px;
+}
+
+.select-container select {
+  height: 36px;
+  padding: 0 35px 0 15px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
+  background: rgba(255, 255, 255, .2) url(../img/icons/marker.png) no-repeat 170px 50%;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.fat-list li,
+.flavor-list li {
+  display: inline-block;
+}
+
+.filter button {
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+    padding: 7px 26px;
+    font-weight: 500;
+    line-height: 18px;
+  background-color: rgba(255, 255, 255, .2);
+    border: 2px solid #fff;
+    border-radius: 19px;
+    outline: none;
+    cursor: pointer;
+}
+
 .select-container select:active {
   background-color: #fff;
 }
@@ -1629,12 +1663,110 @@ ul.breadcrumbs li + li:before {
 }
 .select-container:focus::before,
 .select-container:hover::before {
-  border-color: #000 transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 .select-container:focus .picking-section__select,
 .select-container:hover .picking-section__select {
   color: #000;
 }
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"] {
+  display: inline-block;
+}
+.filters-form input {
+    margin: 0;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    vertical-align: middle;
+}
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 3px #bdc3c7;
+}
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+    background: #1abc9c;
+    box-shadow: 0 0 0 3px #1abc9c;
+}
+
+input[type="radio"] + label::before {
+    border-radius: 50%;
+}
+
+
+input[type=range] {
+  display: none;
+    width: 178px;
+    padding-right: 0;
+    padding-left: 0;
+    vertical-align: middle;
+    background: 0 0;
+    border: none;
+    -webkit-appearance: none;
+}
+input.second-range {
+  display: none;
+    width: 100px;
+    margin-left: -153px;
+}
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  position: absolute;
+  top: -9px;
+  height: 5px;
+
+  background: #f8f7f4;
+  opacity: 0.5;
+  z-index: 2;
+}
+.range-controls .bar {
+  position: absolute;
+  top: -9px;
+  width: 80%;
+  height: 5px;
+
+  background: #ffffff;
+}
+.range-controls .range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+.range-controls .range-toggle
+
+
+button, input {
+    overflow: visible;
+}
+
+
+
 /* /FILTER */
 
 /* ============ PAGINATION ============*/
